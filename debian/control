@@ -1,0 +1,21 @@
+Source: jupyterlab-launcher
+Maintainer: Philippe Pepiot <philippe.pepiot@logilab.fr>
+Section: python
+Priority: optional
+Build-Depends:
+    debhelper (>= 9),
+    python3-all,
+    python3-setuptools,
+Homepage: https://jupyterlab.readthedocs.io/en/stable/
+Vcs-Browser: https://github.com/jupyterlab/jupyterlab-launcher
+Vcs-Git: https://github.com/jupyterlab/jupyterlab-launcher
+Standards-Version: 3.9.6
+
+Package: python3-jupyterlab-launcher
+Architecture: all
+Depends:
+    python3-setuptools,
+    ${misc:Depends},
+    ${python3:Depends}
+Recommends: ${python3:Recommends}
+Description: JupyterLab computational environment (launcher)

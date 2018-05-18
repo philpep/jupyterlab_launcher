@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+
+export PYBUILD_DISABLE=test
+
+%:
+	dh $@ --buildsystem=pybuild --with python3
